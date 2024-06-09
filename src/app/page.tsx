@@ -1,3 +1,12 @@
+'use strinct'
+
+import { SettingsTabs } from '@/components/settingsTabs'
+
 export default function Home() {
-  return <h1>ola</h1>
+  return (
+    <>
+      <h1 className="text-3xl font-medium text-zinc-900">Settings</h1>
+      <SettingsTabs />
+    </>
+  )
 }
