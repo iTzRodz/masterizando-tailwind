@@ -141,6 +141,7 @@ export default function Home() {
             </label>
             <FileInput.Root className="">
               <FileInput.Trigger />
+              <FileInput.FileList />
               <FileInput.Control multiple />
             </FileInput.Root>
           </div>
