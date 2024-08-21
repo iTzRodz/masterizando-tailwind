@@ -5,6 +5,7 @@ import * as FileInput from '@/components/form/fileInput'
 import { Select } from '@/components/form/select'
 import { SelectItem } from '@/components/form/select/item'
 import { TextArea } from '@/components/form/textArea'
+import { Button } from '@/components/Button'
 export default function Home() {
   return (
     <>
@@ -20,20 +21,12 @@ export default function Home() {
             </span>
           </div>
           <div className="flex items-center gap-2">
-            <button
-              type="button"
-              title=""
-              className="rounded-lg border-zinc-300 px-4 py-2 text-sm font-semibold text-zinc-700 shadow-sm hover:bg-zinc-50"
-            >
+            <Button variant="outline" type="button">
               Cancel
-            </button>
-            <button
-              className="rounded-lg bg-violet-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-violet-700"
-              type="submit"
-              form="settings"
-            >
+            </Button>
+            <Button type="submit" form="settings" variant="primary">
               Save
-            </button>
+            </Button>
           </div>
         </div>
         <form
@@ -149,39 +142,24 @@ export default function Home() {
                   <SelectItem value="md" text="Markdown" />
                 </Select>
                 <div className="flex items-center gap-1">
-                  <button
-                    type="button"
-                    className="rounded-md p-2 hover:bg-zinc-50"
-                  >
+                  <Button type="button" variant="ghost">
                     <Bold className="size-4 text-zinc-500 " strokeWidth={3} />
-                  </button>
-                  <button
-                    type="button"
-                    className="rounded-md p-2 hover:bg-zinc-50"
-                  >
+                  </Button>
+                  <Button type="button" variant="ghost">
                     <Italic className="size-4 text-zinc-500 " strokeWidth={3} />
-                  </button>
-                  <button
-                    type="button"
-                    className="rounded-md p-2 hover:bg-zinc-50"
-                  >
+                  </Button>
+                  <Button type="button" variant="ghost">
                     <Link className="size-4 text-zinc-500 " strokeWidth={3} />
-                  </button>
-                  <button
-                    type="button"
-                    className="rounded-md p-2 hover:bg-zinc-50"
-                  >
+                  </Button>
+                  <Button type="button" variant="ghost">
                     <List className="size-4 text-zinc-500 " strokeWidth={3} />
-                  </button>
-                  <button
-                    type="button"
-                    className="rounded-md p-2 hover:bg-zinc-50"
-                  >
+                  </Button>
+                  <Button type="button" variant="ghost">
                     <ListOrdered
                       className="size-4 text-zinc-500 "
                       strokeWidth={3}
                     />
-                  </button>
+                  </Button>
                 </div>
               </div>
 
@@ -208,19 +186,12 @@ export default function Home() {
           </div>
 
           <div className="flex items-center justify-end gap-2 pt-5">
-            <button
-              type="button"
-              title=""
-              className="rounded-lg border-zinc-300 px-4 py-2 text-sm font-semibold text-zinc-700 shadow-sm hover:bg-zinc-50"
-            >
+            <Button variant="outline" type="button">
               Cancel
-            </button>
-            <button
-              className="rounded-lg bg-violet-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-violet-700"
-              type="submit"
-            >
+            </Button>
+            <Button type="submit" form="settings" variant="primary">
               Save
-            </button>
+            </Button>
           </div>
         </form>
       </div>
