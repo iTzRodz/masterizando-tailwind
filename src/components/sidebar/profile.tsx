@@ -10,10 +10,10 @@ export function Profile() {
         className="size-10 rounded-full"
       />
       <div className="flex flex-col truncate">
-        <span className="text-sm font-semibold text-zinc-700">
+        <span className="text-sm font-semibold text-zinc-700 dark:text-zinc-100">
           Rodolfo Carvalho
         </span>
-        <span className="truncate text-sm text-zinc-500">
+        <span className="truncate text-sm text-zinc-500 dark:text-zinc-400">
           rodolfo@meial.com
         </span>
       </div>
